@@ -89,16 +89,7 @@ api.delete('/notes/:id', (req,res)=>{
         res.status(500).json('Error in posting review');
     }
 
-    
-
-    // fs.readFile('./db/db.json', 'utf8', (err, data)=>{
-    //     if(err){
-    //         console.error(err);
-    //     }else{
-    //         const notes=JSON.parse(data);
-    //         res.json(notes);
-    //     }
-    // });   
+ 
 });
 
 module.exports=api;
